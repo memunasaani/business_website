@@ -54,16 +54,26 @@ header .fa-bars{
 }
 
 @media(max-width:850px){
+
     header .fa-bars{
-        display:block;
+        display: block;
     }
     header .navbar{
         position: fixed;
-        top: 1000rem; left: 0;
+        top: 100rem; left: 0; 
+        text-align: center;
         background: rgba(10, 10, 9, 0.6);
         width: 100%;
     }
-    header .navbar.active{
-        top:7.5rem;
+    
+    header .navbar a{
+        display: block;
+        margin: 0.3rem 0;
+        padding: 1rem;
+        font-size: 2.6rem;
+        color: var(--min-color);
     }
+    header .navbar a:hover{
+        background: var(--mini-color);
+    }    
 }
